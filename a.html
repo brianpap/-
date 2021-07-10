@@ -1,0 +1,108 @@
+
+
+<html> 
+<button class="bob" onclick="bobe()">bob</button>
+<button class="treee"onclick="tree()">tree</button>
+<canvas class="a" id="s" width="2000" height="100">
+</canvas>
+<style>
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #377;
+    animation: apu 4s infinite;
+}
+@keyframes apu
+{
+0% {background-color: #377;
+width: 100px;
+height: 100px}
+20% {width: 1000px}
+25% {background-color: #3775;
+width: 110px;
+height: 110px;}
+50% {background-color: #378;
+width: 120px;
+height: 120px}
+75% {background-color: #3785;
+width: 110px;
+height: 110px}
+100% {background-color: #379;
+width: 100px
+height: 100px}
+}
+.bob {background-color: darkblue;
+transform: translateX(10px);
+border-radius: 10px 0px 0px 10px;
+}
+.treee{background-color: darkblue;
+border-radius: 0px 10px 10px 0px;}
+.bob:hover{
+background-color:blue;
+transform: translateY(10px) translateX(10px);
+}
+.aaa{color:blue;}
+.a{background-color:black;
+transform:translateY(10px)}
+.treee:hover
+{
+    background-color:blue;
+    transform:translateY(10px);
+}
+</style>
+<script>
+var name = prompt("hello what is your name");
+var a = document.getElementById("s");
+var b = a.getContext("2d");
+alert("welcome "+ name);
+function bobe()
+{
+b.fillStyle = "black";
+b.fillRect(1,1,200,200);
+b.fillStyle = "white";
+b.fillRect(11,11,10,10);
+b.fillRect(31,11,10,10);
+b.fillStyle = "red";
+b.fillRect(1,1,50,10);
+b.fillRect(1,11,10,30);
+b.fillRect(21,11,10,30);
+b.fillRect(41,11,10,30);
+b.fillRect(1,31,50,10);
+b.fillRect(21,41,10,10);
+b.fillRect(1,51,20,10);
+b.fillRect(31,51,20,10);
+b.fillStyle = "blue";
+b.fillRect(31,21,10,10);
+b.fillRect(11,21,10,10);
+b.fillStyle = "green";
+b.fillRect(11,61,30,10);
+b.fillRect(1,71,50,10);
+b.fillRect(1,81,10,10);
+b.fillRect(41,81,10,10);
+b.fillStyle = "brown";
+b.fillRect(11,81,30,10);
+b.fillRect(1,91,50,10);
+b.fillStyle = "black";
+b.fillRect(13,24,5,5);
+b.fillRect(33,24,5,5);
+b.fillStyle = "orange";
+b.fillRect(91,1,20,20);
+}
+function tree()
+{
+b.fillStyle = "black";
+b.fillRect(1,1,200,200);
+b.fillStyle = "brown"
+b.fillRect(21,30,10,100);
+b.fillStyle = "green"
+b.fillRect(21,1,10,10);
+b.fillRect(11,11,30,10);
+b.fillRect(1,21,50,10);
+}
+</script>
+<body bgcolor=black>
+<a href="https://google.com">google</a>
+<p class="aew"><hr></p>
+<div></div>
+</body>
+</htmls>
